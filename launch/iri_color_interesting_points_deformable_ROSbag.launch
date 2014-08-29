@@ -1,0 +1,9 @@
+<launch>
+  
+  <node name="iri_color_interesting_points_deformable" pkg="iri_color_interesting_points_deformable" type="iri_color_interesting_points_deformable" output="screen" >
+    <remap from="/iri_color_interesting_points_deformable/img_rgb" to="/camera/rgb/image_color" />
+    <remap from="/iri_color_interesting_points_deformable/point_cloud" to="/camera/depth_registered/points" />
+  </node>
+
+</launch>
+
